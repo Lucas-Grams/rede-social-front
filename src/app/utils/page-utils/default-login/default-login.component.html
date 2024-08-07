@@ -1,0 +1,35 @@
+<main>
+    <section class="form-section">
+        <img src="">
+        <h2>{{ title }}</h2>
+
+        <ng-content></ng-content>
+
+        <div class="btn-wrapper">
+            <button
+                class="btn-primary"
+                (click)="submit()"
+                [disabled]="isValid"
+            >{{ primaryBtnTxt }}</button>
+
+            <div class="divider">
+                <div></div>
+                <span>or</span>
+                <div></div>
+            </div>
+            <button class="btn-secondary" (click)="navigate()">{{ secondaryBtnTxt }}</button>
+        </div>
+    </section>
+
+    <section class="main-section">
+        <h1>Venha se conectar com a gente!</h1>
+        <div class="logo-section">
+            <div class="logo">
+                <div class="c">C</div>
+            </div>
+            <div class="name">
+                <div>Connection</div>
+            </div>
+        </div>
+    </section>
+</main>

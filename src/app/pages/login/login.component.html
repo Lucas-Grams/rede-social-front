@@ -1,0 +1,30 @@
+<app-default-login
+    title="Login to your account"
+    primaryBtnTxt="Login"
+    secondaryBtnTxt="Create an account"
+    (submit)="login()"
+    (secondaryBtnClick)="navigate()"
+    [isValid]="!form.valid!"
+>
+
+    <form [formGroup]="form">
+        <app-input
+            label="Email"
+            inputName="email"
+            formControlName="email"
+            placeholder="Enter your email"
+            type="email"
+        ></app-input>
+
+        <app-input
+            label="Password"
+            inputName="password"
+            formControlName="password"
+            placeholder="Enter your password"
+            type="password"
+        ></app-input>
+
+        <span>Forgot password?</span>
+    </form>
+
+</app-default-login>

@@ -1,0 +1,52 @@
+<app-default-login
+    title="Create your account"
+    primaryBtnTxt="Create"
+    secondaryBtnTxt="Return to Login"
+    (submit)="submit()"
+    (secondaryBtnClick)="navigate()"
+    [isValid]="!form.valid"
+>
+
+    <form [formGroup]="form">
+
+        <app-input
+            label="Name"
+            inputName="name"
+            formControlName="name"
+            placeholder="Enter your Name"
+        ></app-input>
+
+        <app-input
+            label="Email"
+            inputName="email"
+            formControlName="email"
+            placeholder="Enter your email"
+            type="email"
+        ></app-input>
+
+        <app-input
+            label="Confirm your e-mail"
+            inputName="emailConfirm"
+            formControlName="emailConfirm"
+            placeholder="Enter your email"
+            type="email"
+        ></app-input>
+
+        <app-input
+            label="Password"
+            inputName="password"
+            formControlName="password"
+            placeholder="Enter your password"
+            type="password"
+        ></app-input>
+
+        <app-input
+            label="Confirm your password"
+            inputName="passwordConfirm"
+            formControlName="passwordConfirm"
+            placeholder="Enter your password"
+            type="password"
+        ></app-input>
+    </form>
+
+</app-default-login>
