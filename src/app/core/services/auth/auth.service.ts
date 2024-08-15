@@ -12,8 +12,8 @@ export class AuthService {
 
     constructor(private http: HttpClient, private router: Router) {}
 
-    login(username: string, password: string): Observable<LoginResponse> {
-        return this.http.post<LoginResponse>(`${this.apiUrl}/login`, { username, password });
+    login(email: string, senha: string): Observable<LoginResponse> {
+        return this.http.post<LoginResponse>(`${this.apiUrl}/login`, { email, senha });
     }
 
     // Função para armazenar o token
