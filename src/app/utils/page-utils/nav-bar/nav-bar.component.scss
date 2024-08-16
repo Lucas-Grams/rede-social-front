@@ -1,0 +1,72 @@
+@import "src/assets/styles/variables.scss";
+
+.navbar{
+    background-color: $primary-color;
+
+    .content-logo {
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            background-color: $secondary-color;
+            border-radius: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .c {
+                font-size: 15px;
+                color: $background-color;
+
+            }
+        }
+
+        .name {
+            font-size: 15px;
+            font-weight: bold;
+            color: $text-color;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+
+    }
+
+    .user {
+        margin-left: auto;
+        min-width: 150px;   /* Largura mínima */
+        min-height: 50px;   /* Altura mínima */
+        width: auto;        /* Permite que a largura seja ajustada automaticamente */
+        height: auto;
+
+        display: flex;      /* Ativa o Flexbox */
+        align-items: center;/* Alinha os itens verticalmente no centro */
+
+        .user-img {
+            width: 40px;
+            height: 40px;
+            background-color: $quaternary-color;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .user-name {
+            font-size: 15px;
+            color: $text-color;
+            margin-left: 10px; /* Adiciona espaço entre a imagem e o nome */
+        }
+
+        .drop-menu {
+            background-color: $background-color-2;
+            color: $text-color;
+        }
+    }
+
+
+}

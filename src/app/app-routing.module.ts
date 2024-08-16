@@ -4,7 +4,6 @@ import {LoginComponent} from "./pages/login/login.component";
 import {CriarContaComponent} from "./pages/criar-conta/criar-conta.component";
 import {AuthGuard} from "./utils/guards/auth.guard";
 
-
 const routes: Routes = [
     {
         path: '',

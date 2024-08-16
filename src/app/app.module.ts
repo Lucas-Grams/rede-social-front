@@ -15,15 +15,13 @@ import {HomeComponent} from "./pages/home/home.component";
   declarations: [
       AppComponent,
       LoginComponent,
-      CriarContaComponent,
-      HomeComponent
+      CriarContaComponent
   ],
     imports: [
         UtilsModule,
         BrowserModule,
         AppRoutingModule,
         ReactiveFormsModule,
-        BrowserModule,
         HttpClientModule
     ],
   providers: [

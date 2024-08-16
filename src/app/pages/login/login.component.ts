@@ -34,13 +34,11 @@ export class LoginComponent implements OnInit {
     }
 
     login() {
-        console.log(this.form.value)
         if (this.form.valid) {
             this.authService.login(this.form.get('email')?.value, this.form.get('password')?.value).subscribe({
                 next: (response: any) => { // Defina o tipo adequado se você tiver uma interface para a resposta
                     const token = response.token;
                     this.authService.setToken(token);
-                    console.log(this.authService.getToken())
                     this.router.navigate(['/home']);
                 },
                 error: (error: any) => { // Defina o tipo adequado se você tiver uma interface para o erro
