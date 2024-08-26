@@ -20,6 +20,10 @@ export class NavBarComponent implements OnInit{
     ngOnInit() {
     }
 
+    foto(){
+        return this.usuario?.foto ? this.usuario.foto : this.usuario?.nome?.charAt(0).toUpperCase();
+    }
+
     logout() {
         this.authService.logout();
     }
